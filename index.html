@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+    <!-- Replace the content tag with appropriate information -->
+    <meta name="description" content="DESCRIPTION META TAG">
+    <meta property="og:title" content="SOCIAL MEDIA TITLE TAG" />
+    <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG" />
+    <meta property="og:url" content="URL OF THE WEBSITE" />
+    <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+    <meta property="og:image" content="static/image/your_banner_image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+
+    <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+    <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+    <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+    <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <!-- Keywords for your paper to be indexed by-->
+    <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <title>FunQA benchmark</title>
+    <link rel="icon" type="image/x-icon" href="static/images/logo_trans.ico">
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+    <link rel="stylesheet" href="static/css/bulma.min.css">
+    <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+    <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link rel="stylesheet" href="static/css/index.css">
+    <link href="css/fontawesome-all.css" rel="stylesheet">
+    <link href="css/font-awesome.css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+    <script defer src="static/js/fontawesome.all.min.js"></script>
+    <script src="static/js/bulma-carousel.min.js"></script>
+    <script src="static/js/bulma-slider.min.js"></script>
+    <script src="static/js/index.js"></script>
+
+    <script src="js/jquery.countup.js"></script>
+    <script>
+        $('.counter').countUp();
+    </script>
+</head>
+
+<body>
+
+
+    <section class="hero">
+        <div class="hero-body">
+            <div class="container is-max-desktop">
+                <div class="columns is-centered">
+                    <div class="column has-text-centered">
+                        <h1 class="title is-1 publication-title">FunQA: Towards Surprising Video Comprehension</h1>
+                        <div class="is-size-5 publication-authors">
+                            <!-- Paper authors -->
+                            <span class="author-block">
+                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Binzhu Xie</a><sup>*</sup>,</span>
+                            <span class="author-block">
+                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank"> Sicheng Zhang</a><sup>*</sup>,</span>
+                            <span class="author-block">
+                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank"> Zitang Zhou</a><sup>*</sup>
+                  </span>
+                        </div>
+
+                        <div class="is-size-5 publication-authors">
+                            <span class="author-block">Institution Name<br>Conferance name and year</span>
+                            <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+                        </div>
+
+                        <div class="column has-text-centered">
+                            <div class="publication-links">
+                                <!-- Arxiv PDF link -->
+                                <span class="link-block">
+                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                                <span>Paper</span>
+                                </a>
+                                </span>
+
+                                <!-- Supplementary PDF link -->
+                                <span class="link-block">
+                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                      </span>
+                                <span>Supplementary</span>
+                                </a>
+                                </span>
+
+                                <!-- Github link -->
+                                <span class="link-block">
+                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                                <span>Code</span>
+                                </a>
+                                </span>
+
+                                <!-- ArXiv abstract Link -->
+                                <span class="link-block">
+                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                                <span>arXiv</span>
+                                </a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- critical statics-->
+    <section class="hero is-small">
+        <div class="block">
+            <div class="col-md-3 stats_left counter_grid3">
+                <img width="110" src="static/images/logo_funqa.png" alt="MY ALT TEXT" />
+                <p class="counter">1045</p>
+                <h4>Happy Clients</h4>
+            </div>
+            <div class="col-md-3 stats_left counter_grid">
+                <img width="110" src="static/images/logo1.png" alt="MY ALT TEXT" />
+                <p class="counter">145</p>
+                <h4>Branches</h4>
+            </div>
+            <div class="col-md-3 stats_left counter_grid1">
+                <img width="110" src="static/images/logo2.png" alt="MY ALT TEXT" />
+                <p class="counter">165</p>
+                <h4>Trainers</h4>
+            </div>
+            <div class="col-md-3 stats_left counter_grid2">
+                <img width="110" src="static/images/logo3.png" alt="MY ALT TEXT" />
+                <p class="counter">563</p>
+                <h4>Pojects</h4>
+            </div>
+
+
+        </div>
+        </div>
+    </section>
+
+    <!-- Video carousel -->
+    <section class="hero is-small">
+        <div class="hero-body">
+            <div class="container">
+                <h2 class="title is-3" style="text-align: center;">
+                    <font color=#f44a5e>Funny</font>,
+                    <font color=#f17338>creative</font>, and
+                    <font color=#106ddf>magic</font> videos
+                </h2>
+                <div id="results-carousel" class="carousel results-carousel">
+                    <div class="item">
+                        <div style="min-width: 300px;
+                        margin-right: 20px;">
+                            <video width="80%" poster="" id="tree" autoplay controls muted loop height="50%">
+                          <!-- Your video here -->
+                          <source src="static/videos/H_T_481_0000_0225.mp4"
+                          type="video/mp4">
+                        </video>
+                        </div>
+                        <div class="demo-questions">
+                            <div>
+                                <p style="font-size: 18px;
+                            line-height: 20px;
+                            margin: 5px 0;
+                            font-weight: 400;
+                            color: #161616;">When is the most amusing part?</p>
+                            </div>
+                            <div>
+                                <p style="font-size: 14px;
+                            margin-bottom: 5px;
+                            line-height: 18px;">The funny moment is from frame 70 to 140.</p>
+                            </div>
+                        </div>
+                        <div class="demo-questions">
+                            <div>
+                                <p style="font-size: 18px;
+                          line-height: 20px;
+                          margin: 5px 0;
+                          font-weight: 400;
+                          color: #161616;">What happened during the entertaining segment of this video?</p>
+                            </div>
+                            <div>
+                                <p style="font-size: 14px;
+                          margin-bottom: 5px;
+                          line-height: 18px;">A man tried to get some ketchup and couldn't pour it out, so he vigorously shook the ketchup bottle, but unintentionally splattering the person eating a burger with ketchup.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="demo-questions">
+                            <div>
+                                <p style="font-size: 18px;
+                        line-height: 20px;
+                        margin: 5px 0;
+                        font-weight: 400;
+                        color: #161616;">Why the segment is funny?
+                                </p>
+                            </div>
+                            <div>
+                                <p style="font-size: 14px;
+                        margin-bottom: 5px;
+                        line-height: 18px;">This video is funny for two main reasons. Firstly, the comedic element arises from the accidental ketchup spill that lands on the man's face. Moreover, the man's expression of shock, coupled with his ketchup-covered visage,
+                                    elicits contagious laughter.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="demo-questions">
+                            <div>
+                                <p style="font-size: 18px;
+                      line-height: 20px;
+                      margin: 5px 0;
+                      font-weight: 400;
+                      color: #161616;">Please give this humorous short video a vivid and appropriate title.</p>
+                            </div>
+                            <div>
+                                <p style="font-size: 14px;
+                      margin-bottom: 5px;
+                      line-height: 18px;">Miracle Tomato Sauce.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="item">
+                        <div style="min-width: 300px;
+                      margin-right: 20px;">
+                            <video width="80%" poster="" id="tree" autoplay controls muted loop height="50%">
+                        <!-- Your video here -->
+                        <source src="static/videos/H_T_481_0000_0225.mp4"
+                        type="video/mp4">
+                      </video>
+                        </div>
+                        <div class="demo-questions">
+                            <div>
+                                <p style="font-size: 18px;
+                          line-height: 20px;
+                          margin: 5px 0;
+                          font-weight: 400;
+                          color: #161616;">When is the most amusing part?</p>
+                            </div>
+                            <div>
+                                <p style="font-size: 14px;
+                          margin-bottom: 5px;
+                          line-height: 18px;">The funny moment is from frame 70 to 140.</p>
+                            </div>
+                        </div>
+                        <div class="demo-questions">
+                            <div>
+                                <p style="font-size: 18px;
+                        line-height: 20px;
+                        margin: 5px 0;
+                        font-weight: 400;
+                        color: #161616;">What happened during the entertaining segment of this video?</p>
+                            </div>
+                            <div>
+                                <p style="font-size: 14px;
+                        margin-bottom: 5px;
+                        line-height: 18px;">A man tried to get some ketchup and couldn't pour it out, so he vigorously shook the ketchup bottle, but unintentionally splattering the person eating a burger with ketchup.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="demo-questions">
+                            <div>
+                                <p style="font-size: 18px;
+                      line-height: 20px;
+                      margin: 5px 0;
+                      font-weight: 400;
+                      color: #161616;">Why the segment is funny?
+                                </p>
+                            </div>
+                            <div>
+                                <p style="font-size: 14px;
+                      margin-bottom: 5px;
+                      line-height: 18px;">This video is funny for two main reasons. Firstly, the comedic element arises from the accidental ketchup spill that lands on the man's face. Moreover, the man's expression of shock, coupled with his ketchup-covered visage,
+                                    elicits contagious laughter.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="demo-questions">
+                            <div>
+                                <p style="font-size: 18px;
+                    line-height: 20px;
+                    margin: 5px 0;
+                    font-weight: 400;
+                    color: #161616;">Please give this humorous short video a vivid and appropriate title.</p>
+                            </div>
+                            <div>
+                                <p style="font-size: 14px;
+                    margin-bottom: 5px;
+                    line-height: 18px;">Miracle Tomato Sauce.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="item2">
+                        <div style="min-width: 300px;
+                        margin-right: 20px;">
+                            <video width="80%" poster="" id="tree" autoplay controls muted loop height="50%">
+                          <!-- Your video here -->
+                          <source src="static/videos/H_T_481_0000_0225.mp4"
+                          type="video/mp4">
+                        </video>
+                        </div>
+                        <div class="demo-questions">
+                            <div>
+                                <p style="font-size: 18px;
+                            line-height: 20px;
+                            margin: 5px 0;
+                            font-weight: 400;
+                            color: #161616;">When is the most amusing part?</p>
+                            </div>
+                            <div>
+                                <p style="font-size: 14px;
+                            margin-bottom: 5px;
+                            line-height: 18px;">The funny moment is from frame 70 to 140.</p>
+                            </div>
+                        </div>
+                        <div class="demo-questions">
+                            <div>
+                                <p style="font-size: 18px;
+                          line-height: 20px;
+                          margin: 5px 0;
+                          font-weight: 400;
+                          color: #161616;">What happened during the entertaining segment of this video?</p>
+                            </div>
+                            <div>
+                                <p style="font-size: 14px;
+                          margin-bottom: 5px;
+                          line-height: 18px;">A man tried to get some ketchup and couldn't pour it out, so he vigorously shook the ketchup bottle, but unintentionally splattering the person eating a burger with ketchup.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="demo-questions">
+                            <div>
+                                <p style="font-size: 18px;
+                        line-height: 20px;
+                        margin: 5px 0;
+                        font-weight: 400;
+                        color: #161616;">Why the segment is funny?
+                                </p>
+                            </div>
+                            <div>
+                                <p style="font-size: 14px;
+                        margin-bottom: 5px;
+                        line-height: 18px;">This video is funny for two main reasons. Firstly, the comedic element arises from the accidental ketchup spill that lands on the man's face. Moreover, the man's expression of shock, coupled with his ketchup-covered visage,
+                                    elicits contagious laughter.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="demo-questions">
+                            <div>
+                                <p style="font-size: 18px;
+                      line-height: 20px;
+                      margin: 5px 0;
+                      font-weight: 400;
+                      color: #161616;">Please give this humorous short video a vivid and appropriate title.</p>
+                            </div>
+                            <div>
+                                <p style="font-size: 14px;
+                      margin-bottom: 5px;
+                      line-height: 18px;">Miracle Tomato Sauce.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="item3">
+                        <div style="min-width: 300px;
+                        margin-right: 20px;">
+                            <video width="80%" poster="" id="tree" autoplay controls muted loop height="50%">
+                          <!-- Your video here -->
+                          <source src="static/videos/H_T_481_0000_0225.mp4"
+                          type="video/mp4">
+                        </video>
+                        </div>
+                        <div class="demo-questions">
+                            <div>
+                                <p style="font-size: 18px;
+                            line-height: 20px;
+                            margin: 5px 0;
+                            font-weight: 400;
+                            color: #161616;">When is the most amusing part?</p>
+                            </div>
+                            <div>
+                                <p style="font-size: 14px;
+                            margin-bottom: 5px;
+                            line-height: 18px;">The funny moment is from frame 70 to 140.</p>
+                            </div>
+                        </div>
+                        <div class="demo-questions">
+                            <div>
+                                <p style="font-size: 18px;
+                          line-height: 20px;
+                          margin: 5px 0;
+                          font-weight: 400;
+                          color: #161616;">What happened during the entertaining segment of this video?</p>
+                            </div>
+                            <div>
+                                <p style="font-size: 14px;
+                          margin-bottom: 5px;
+                          line-height: 18px;">A man tried to get some ketchup and couldn't pour it out, so he vigorously shook the ketchup bottle, but unintentionally splattering the person eating a burger with ketchup.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="demo-questions">
+                            <div>
+                                <p style="font-size: 18px;
+                        line-height: 20px;
+                        margin: 5px 0;
+                        font-weight: 400;
+                        color: #161616;">Why the segment is funny?
+                                </p>
+                            </div>
+                            <div>
+                                <p style="font-size: 14px;
+                        margin-bottom: 5px;
+                        line-height: 18px;">This video is funny for two main reasons. Firstly, the comedic element arises from the accidental ketchup spill that lands on the man's face. Moreover, the man's expression of shock, coupled with his ketchup-covered visage,
+                                    elicits contagious laughter.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="demo-questions">
+                            <div>
+                                <p style="font-size: 18px;
+                      line-height: 20px;
+                      margin: 5px 0;
+                      font-weight: 400;
+                      color: #161616;">Please give this humorous short video a vivid and appropriate title.</p>
+                            </div>
+                            <div>
+                                <p style="font-size: 14px;
+                      margin-bottom: 5px;
+                      line-height: 18px;">Miracle Tomato Sauce.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End image carousel -->
+
+    <!-- Teaser video-->
+    <!--
+    <section class="hero teaser">
+        <div class="container is-max-desktop">
+            <div class="hero-body">
+                <video poster="" id="tree" autoplay controls muted loop height="100%">
+
+        <source src="static/videos/banner_video.mp4"
+        type="video/mp4">
+      </video>
+                <h2 class="subtitle has-text-centered">
+                    Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus.
+                </h2>
+            </div>
+        </div>
+    </section>-->
+    <!-- End teaser video -->
+
+    <!-- Paper abstract -->
+    <section class="section hero is-light">
+        <div class="container is-max-desktop">
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-four-fifths">
+                    <h2 class="title is-3">Abstract</h2>
+                    <div class="content has-text-justified">
+                        <p>
+                            Surprising videos, e.g., funny clips, creative performances, or visual illusions, attract significant attention. Enjoyment of these videos is not simply a response to visual stimuli; rather, it hinges on the human capacity to understand (and appreciate)
+                            commonsense violations depicted in these videos. We introduce <b>FunQA</b>, a challenging video question answering (QA) dataset specifically designed to evaluate and enhance the depth of video reasoning
+                            based on counter-intuitive and fun videos. Unlike most video QA benchmarks which focus on less surprising contexts, e.g., cooking or instructional videos, FunQA covers three previously unexplored types of surprising videos:
+                            <em>1) <font color=#f44a5e>HumorQA</font> , 2) <font color=#f17338>CreativeQA</font>, and 3) <font color=#106ddf>MagicQA</font></em>. For each subset, we establish rigorous QA tasks designed to assess the model's capability
+                            in counter-intuitive timestamp localization, detailed video description, and reasoning around counter-intuitiveness. We also pose higher-level tasks, such as attributing a fitting and vivid title to the video, and scoring the
+                            video creativity. In total, the FunQA benchmark consists of 312K free-text QA pairs derived from 4.3K video clips, spanning a total of 24 video hours. Extensive experiments with existing VideoQA models reveal significant performance
+                            gaps for the FunQA videos across spatial-temporal reasoning, visual-centered reasoning, and free-text generation.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End paper abstract -->
+
+
+    <!-- Image carousel -->
+    <section class="hero is-small">
+        <div class="hero-body">
+            <div class="container">
+                <div id="results-carousel1" class="carousel results-carousel1">
+                    <div class="item">
+                        <!-- Your image here -->
+                        <h2 class="title is-3" style="text-align: center;">Main figure</h2>
+                        <img src="static/images/fig_main.jpg" alt="MY ALT TEXT" />
+                        <h2 class="subtitle">
+                            <b>Overview of FunQA.</b> FunQA comprises three subsets of surprising videos: 1) HumorQA, 2) CreativeQA, and 3) MagicQA. Each subset is associated with three common tasks: <em>1) counter-intuitive timestamp localization}, </em><em>2) detailed video description}, and 3) reasoning around counter-intuitiveness</em>                            } (see
+                            <b>H1-3</b>,
+                            <b>C1-3</b>, and
+                            <b>M1-3</b>). Furthermore, we offer higher-level tasks tailored for each video type, such as <em>attributing a fitting and vivid title</em> for HumorQA and CreativeQA (see
+                            <b>H4</b>,
+                            <b>H4</b>), etc.
+                        </h2>
+                    </div>
+                    <div class="item">
+                        <!-- Your image here -->
+                        <h2 class="title is-3" style="text-align: center;">Dataset statics</h2>
+                        <img src="static/images/statics.png" alt="MY ALT TEXT" />
+                        <h2 class="subtitle has-text-centered">
+                            Third image description.
+                        </h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End image carousel -->
+
+
+
+    <!-- Image carousel -->
+    <section class="hero is-small">
+        <div class="hero-body">
+            <div class="container">
+                <div id="results-carousel1" class="carousel results-carousel1">
+                    <div class="item">
+                        <!-- Your image here -->
+                        <h2 class="title is-3" style="text-align: center;">Comparision between different benchmarks</h2>
+                        <img src="static/images/table1.png" alt="MY ALT TEXT" />
+                        <h2 class="subtitle has-text-centered">
+                            Second image description.
+                        </h2>
+                    </div>
+                    <div class="item">
+                        <!-- Your image here -->
+                        <h2 class="title is-3" style="text-align: center;">Main result for baselines</h2>
+                        <img src="static/images/table.png" alt="MY ALT TEXT" />
+                        <h2 class="subtitle has-text-centered">
+                            First image description.
+                        </h2>
+                    </div>
+                    <div class="item">
+                        <!-- Your image here -->
+                        <h2 class="title is-3" style="text-align: center;">Comparison of responses from different models</h2>
+                        <img src="static/images/model_comparsion.png" alt="MY ALT TEXT" />
+                        <h2 class="subtitle has-text-centered">
+                            Second image description.
+                        </h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End image carousel -->
+
+
+    <!-- Youtube video 
+    <section class="hero is-small is-light">
+        <div class="hero-body">
+            <div class="container">
+                <h2 class="title is-3">Video Presentation</h2>
+                <div class="columns is-centered has-text-centered">
+                    <div class="column is-four-fifths">
+
+                        <div class="publication-video">
+                            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    End youtube video -->
+
+
+    <!-- Video carousel 
+    <section class="hero is-small">
+        <div class="hero-body">
+            <div class="container">
+                <h2 class="title is-3">Another Carousel</h2>
+                <div id="results-carousel" class="carousel results-carousel">
+                    <div class="item item-video1">
+                        <video poster="" id="video1" autoplay controls muted loop height="100%">
+            <source src="static/videos/carousel1.mp4"
+            type="video/mp4">
+          </video>
+                    </div>
+                    <div class="item item-video2">
+                        <video poster="" id="video2" autoplay controls muted loop height="100%">
+            <source src="static/videos/carousel2.mp4"
+            type="video/mp4">
+          </video>
+                    </div>
+                    <div class="item item-video3">
+                        <video poster="" id="video3" autoplay controls muted loop height="100%">\
+            <source src="static/videos/carousel3.mp4"
+            type="video/mp4">
+          </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    End video carousel -->
+
+
+
+
+
+
+    <!-- Paper poster -->
+    <section class="hero is-small is-light">
+        <div class="hero-body">
+            <div class="container">
+                <h2 class="title" style="text-align: center;">Poster</h2>
+
+                <iframe src="static/pdfs/sample.pdf" width="100%" height="550">
+          </iframe>
+
+            </div>
+        </div>
+    </section>
+    <!--End paper poster -->
+
+
+    <!--BibTex citation -->
+    <section class="section" id="BibTeX">
+        <div class="container is-max-desktop content">
+            <h2 class="title">BibTeX</h2>
+            <pre><code>BibTex Code Here</code></pre>
+        </div>
+    </section>
+    <!--End BibTex citation -->
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="columns is-centered">
+                <div class="column is-8">
+                    <div class="content">
+
+                        <p>
+                            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a>. You are free to borrow the of this website, we just ask that you link
+                            back to this page in the footer. <br> This website is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Statcounter tracking code -->
+
+    <!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+</body>
+
+</html>
