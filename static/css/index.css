@@ -149,6 +149,7 @@ body {
     border-radius: 8px;
     justify-content: space-between;
     margin-right: 10px;
+    text-align: justify;
 }
 
 .results-carousel video {
