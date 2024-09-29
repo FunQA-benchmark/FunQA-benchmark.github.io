@@ -498,12 +498,13 @@
                 <div class="content has-text-justified">
                     <p>
                         Surprising videos, e.g., funny clips, creative performances, or visual illusions, attract significant attention. Enjoyment of these videos is not simply a response to visual stimuli; rather, it hinges on the human capacity to understand (and appreciate)
-                        commonsense violations depicted in these videos. We introduce <b>FunQA</b>, a challenging video question answering (QA) dataset specifically designed to evaluate and enhance the depth of video reasoning
-                        based on counter-intuitive and fun videos. Unlike most video QA benchmarks which focus on less surprising contexts, e.g., cooking or instructional videos, FunQA covers three previously unexplored types of surprising videos:
-                        <em>1) <font color=#f44a5e>HumorQA</font> , 2) <font color=#f17338>CreativeQA</font>, and 3) <font color=#106ddf>MagicQA</font></em>. For each subset, we establish rigorous QA tasks designed to assess the model's capability
-                        in counter-intuitive timestamp localization, detailed video description, and reasoning around counter-intuitiveness. We also pose higher-level tasks, such as attributing a fitting and vivid title to the video, and scoring the
-                        video creativity. In total, the FunQA benchmark consists of 312K free-text QA pairs derived from 4.3K video clips, spanning a total of 24 video hours. Extensive experiments with existing VideoQA models reveal significant performance
-                        gaps for the FunQA videos across spatial-temporal reasoning, visual-centered reasoning, and free-text generation.
+                        commonsense violations depicted in these videos. We introduce FunQA, a challenging video question answering (QA) dataset specifically designed to evaluate and enhance the depth of video reasoning based on counter-intuitive and fun videos. 
+                        Unlike most video QA benchmarks which focus on less surprising contexts, e.g., cooking or instructional videos, FunQA covers three previously unexplored types of surprising videos: 
+                        <em>1) <font color=#f44a5e>HumorQA</font> , 2) <font color=#f17338>CreativeQA</font>, and 3) <font color=#106ddf>MagicQA</font></em>.  
+                        For each subset, we establish rigorous QA tasks designed to assess the model’s capability in counter-intuitive timestamp localization, detailed video description, and reasoning around counterintuitiveness. 
+                        We also pose higher-level tasks, such as attributing a fitting and vivid title to the video, and scoring the video creativity. In total, the FunQA benchmark consists of 312K free-text QA pairs derived from 4.3K video clips, 
+                        spanning a total of 24 video hours. Moreover, we propose FunMentor, an agent designed for Vision-Language Models (VLMs) that uses multi-turn dialogues to enhance models’ understanding of counterintuitiveness. 
+                        Extensive experiments with existing VLMs demonstrate the effectiveness of FunMentor and reveal significant performance gaps for the FunQA videos across spatial-temporal reasoning, visual-centered reasoning, and free-text generation.
                     </p>
                 </div>
             </div>
@@ -559,9 +560,9 @@
                     <h2 class="title is-3" style="text-align: center;">Comparison between different benchmarks</h2>
                     <h2 class="subtitle">
                         <br>Compare to other datasets, FunQA revolves around the captivating realm of interesting and counter-intuitive videos. The tasks within FunQA are specifically designed to challenge the vision capabilities of models, requiring
-                        strong skills in producing an in-depth description, interpretation, and spatial-temporal reasoning. Here we clarify the abbreviation in the table. <b>Anno.</b>: Annotation; <b>M</b>: Manual, <b>A</b>: Automatic; For Input,
-                        <b>V, A, S</b>, and <b>B</b> denote Video, Audio, Subtitle, and Bounding-box; <b>VC</b> means visual-centric, <b>Desc.</b> means Description, <b>Expl</b> for Explanation, <b>Expl</b> for Spatial-temporal Reasoning. For QA Tasks,
-                        <b>MC</b> denotes Multiple Choice QA, <b>OE</b> means Open Ended QA, and <b>FT</b> means Free Text QA.
+                        strong skills in producing an in-depth description, interpretation, and spatial-temporal reasoning. Here we clarify the abbreviation in the table. 
+                        <b>Avg Len</b>b> denotes video average length; <b># Clips</b>b> means number of video clips; <b>VC</b> for visual-centric, <b>Des.</b> for Description, <b>Exp.</b> for Explanation, 
+                        <b>STR</b> for Spatial-temporal Reasoning, <b>MC</b> means Multiple Choice QA, and <b>OE</b> shows Open Ended QA with <b>Average Word Count</b> per response.
                     </h2>
                     <img src="static/images/table1.png" alt="MY ALT TEXT" />
 
@@ -572,7 +573,7 @@
                     <h2 class="subtitle">
                         <br>The FunQA benchmark consists of four task categories. H1, C1, M1 represent the counter-intuitive timestamp localization task, where IOU is used as the metric. H2, C2, M2 represent the detailed video description task, and
                         H3, C3, M3 represent reasoning around counter-intuitiveness. For the higher-level tasks, H4, C4 involve attributing a fitting and vivid title. The responses for all these tasks in free-text format. We use the following metrics:
-                        BLEU-4 / ROUGE-L / CIDEr (shown in the first row) and BLEURT / GPT-4 (shown in the second row) for evaluation. C5 represents scoring the video creativity, and the metric is the Difference between the predicted score and the
+                        BLEU-4 / ROUGE-L / CIDEr (shown in the first row) and BLEURT / GPT-4 (shown in the second row) for evaluation. C5 represents scoring the video creativity, and the metric is the <b>Accuracy</b> between the predicted score and the
                         official score. We tested the caption-based and instruction-based models. Here we clarify the abbreviation in the table. L.M.: GIT_LARGE_MSRVTT; L.V.: GIT_LARGE_VATEX; D.C. means finetuned on Dense Caption; FunQA means
                         finetuned on FunQA.
                     </h2>
